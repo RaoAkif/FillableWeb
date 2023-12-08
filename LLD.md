@@ -78,119 +78,114 @@ A matrix detailing communication aspects within the project.
 ### 7.	Functional Communication Matrix
 ![image](https://github.com/RaoAkif/LowLevelDesignDoc/assets/61361037/2d7aacd0-565f-40ec-8e8b-12d9d0c03657)
 
-
 ### 8. Functional Requirements
 
 #### 8.1 Asset Verification:
-   a. **KIOSK Placement:**
+   - **KIOSK Placement:**
       - The KIOSK shall be strategically placed at the entrance of different sites/zones for asset verification.
-   b. **Verification Process:**
+   - **Verification Process:**
       - When an individual enters a site or zone with an associated asset, the KIOSK will initiate the verification process.
       - The KIOSK shall check whether the asset is authorized to enter the specific zone.
-   c. **Visual Indicators:**
+   - **Visual Indicators:**
       - If the assigned asset is permitted in the zone, the KIOSK shall activate a green light.
       - If the asset is not allowed, the KIOSK shall display a red light.
    
 #### 8.2 Movement History:
-   a. **Asset Custodian Movement:**
+   - **Asset Custodian Movement:**
       - The system shall maintain a comprehensive movement history of the asset custodian.
-   b. **Officer Confirmation:**
+   - **Officer Confirmation:**
       - The officer must confirm each movement to the next asset.
       - Confirmation actions shall be logged and accessible in reports, specifying the confirming officer.
 
 #### 8.3 Officer Confirmation:
-   a. **Confirmation Requirement:**
+   - **Confirmation Requirement:**
       - The officer must confirm their intention to move to the next asset.
-   b. **Logging and Reporting:**
+   - **Logging and Reporting:**
       - The system shall log and generate reports detailing the movements confirmed by each officer.
       - Access controls shall be implemented to restrict report access based on officer credentials (derived from login data).
 
 #### 8.4 Reporting:
-   a. **Confirmation Logging:**
+   - **Confirmation Logging:**
       - The system shall log officer confirmations for each asset movement.
-   b. **Report Access Control:**
+   - **Report Access Control:**
       - Access controls will be in place to restrict access to confirmation reports based on officer credentials.
-   c. **Data Entry Maintenance:**
+   - **Data Entry Maintenance:**
       - All data entry activities shall be recorded on the KIOSK, and the system shall maintain the data until it is online.
-   d. **Data Synchronization:**
+   - **Data Synchronization:**
       - Once online, the KIOSK shall push the accumulated data to the server.
 
 #### 8.5 Offline Functionality:
-   a. **Offline Status Display:**
+   - **Offline Status Display:**
       - The KIOSK shall display an indicator on the screen indicating whether it is online or offline.
-   b. **Asset Registry Update:**
+   - **Asset Registry Update:**
       - Regular updates of the asset registry shall be pulled from the server to the KIOSK during offline periods.
-   c. **Data Entry and Storage:**
+   - **Data Entry and Storage:**
       - All data entry activities, including asset verifications and officer confirmations, shall be maintained on the KIOSK during offline periods.
-   d. **Data Push to Server:**
+   - **Data Push to Server:**
       - As soon as the KIOSK regains online connectivity, it shall initiate the synchronization process to push the locally stored data to the server.
-
 
 ### 9 Non-Functional Requirements
 
 #### 9.1 Performance:
-   a. **Handling Volume:**
+   - **Handling Volume:**
       - The system should be capable of efficiently handling a high volume of asset verification requests concurrently.
-   b. **Response Time:**
+   - **Response Time:**
       - The response time for asset verification requests should be less than 3 seconds, ensuring swift and seamless user experience.
 
 #### 9.2 Security:
-   a. **Role-Based Access Control (RBAC):**
+   - **Role-Based Access Control (RBAC):**
       - The system shall implement Role-Based Access Control, ensuring that users have access privileges based on their roles.
-   b. **Confidentiality and Integrity:**
+   - **Confidentiality and Integrity:**
       - The system shall maintain the confidentiality and integrity of asset and staff data throughout all processes and interactions.
-   c. **Protection Measures:**
+   - **Protection Measures:**
       - The system shall employ robust measures to protect against unauthorized access and hacking attempts, safeguarding the integrity and security of the data.
 
 #### 9.3 Usability:
-   a. **User-Friendly KIOSK Interface:**
+   - **User-Friendly KIOSK Interface:**
       - The KIOSK interface shall be designed to be user-friendly, intuitive, and easily navigable.
-   b. **Reliability and Availability:**
+   - **Reliability and Availability:**
       - The system shall maintain a high level of reliability and be available at all times, minimizing downtime and ensuring continuous operation.
-   c. **Scalability:**
+   - **Scalability:**
       - The system should be designed with scalability in mind, allowing for future growth and accommodating increased demand without compromising performance.
-   d. **Compatibility:**
+   - **Compatibility:**
       - The system should be compatible with the existing ICT infrastructure at ENEC, ensuring seamless integration and interoperability with the current technology landscape.
-
-
-
 
 ### 10. Design Considerations
 
-10.1 **Innovative & Smart Design:**
-The design of the kiosk system places a strong emphasis on innovation and intelligence. Striving for a modern and aesthetically pleasing appearance, the goal is to implement a design that not only serves its functional purpose effectively but also adds an element of sophistication. Additionally, the inclusion of anti-corrosion power coating ensures longevity and durability, contributing to the overall resilience of the system.
+#### 10.1 Innovative & Smart Design:
+   - The design of the kiosk system places a strong emphasis on innovation and intelligence. Striving for a modern and aesthetically pleasing appearance, the goal is to implement a design that not only serves its functional purpose effectively but also adds an element of sophistication. Additionally, the inclusion of anti-corrosion power coating ensures longevity and durability, contributing to the overall resilience of the system.
 
-10.2 **Ergonomically and Compact Structure:**
-The kiosk is designed with a focus on ergonomics to enhance user comfort and operational efficiency. The structure is carefully crafted to be compact, ensuring optimal use of space. User-friendly interfaces and intuitive controls are incorporated, making interactions with the kiosk straightforward. Furthermore, the design facilitates ease of maintenance by ensuring that components are easily accessible for servicing.
+#### 10.2 Ergonomically and Compact Structure:
+   - The kiosk is designed with a focus on ergonomics to enhance user comfort and operational efficiency. The structure is carefully crafted to be compact, ensuring optimal use of space. User-friendly interfaces and intuitive controls are incorporated, making interactions with the kiosk straightforward. Furthermore, the design facilitates ease of maintenance by ensuring that components are easily accessible for servicing.
 
-10.3 **Rugged Steel Frame and Overtime Running:**
-The structural foundation of the kiosk relies on a rugged steel frame, providing robustness and durability. This choice of material ensures the system's ability to withstand external pressures and environmental factors. Moreover, the design is optimized for continuous and prolonged operation, with a commitment to achieving high precision for enhanced performance. The focus on high stability and reliability aims to minimize disruptions in functionality.
+#### 10.3 Rugged Steel Frame and Overtime Running:
+   - The structural foundation of the kiosk relies on a rugged steel frame, providing robustness and durability. This choice of material ensures the system's ability to withstand external pressures and environmental factors. Moreover, the design is optimized for continuous and prolonged operation, with a commitment to achieving high precision for enhanced performance. The focus on high stability and reliability aims to minimize disruptions in functionality.
 
-10.4 **Cost-Effective & Customer-Oriented Design:**
-A key consideration in the design process is the pursuit of cost-effectiveness without compromising functionality. The design aims to meet the needs and expectations of customers, ensuring that the system is not only efficient but also aligned with user requirements. Scalability and flexibility are incorporated to accommodate potential future enhancements, making the design both customer-oriented and adaptable.
+#### 10.4 Cost-Effective & Customer-Oriented Design:
+   - A key consideration in the design process is the pursuit of cost-effectiveness without compromising functionality. The design aims to meet the needs and expectations of customers, ensuring that the system is not only efficient but also aligned with user requirements. Scalability and flexibility are incorporated to accommodate potential future enhancements, making the design both customer-oriented and adaptable.
 
-10.5 **Kiosk Design with 1 Laptop RFID Reader Plates per Kiosk:**
-Each kiosk is equipped with a dedicated laptop RFID reader plate, emphasizing a tailored approach to integration. This design choice ensures seamless communication and compatibility between the RFID reader and the overall kiosk system. The singular focus on one RFID reader per kiosk enhances system efficiency and responsiveness.
+#### 10.5 Kiosk Design with 1 Laptop RFID Reader Plates per Kiosk:
+   - Each kiosk is equipped with a dedicated laptop RFID reader plate, emphasizing a tailored approach to integration. This design choice ensures seamless communication and compatibility between the RFID reader and the overall kiosk system. The singular focus on one RFID reader per kiosk enhances system efficiency and responsiveness.
 
-10.6 **Display Screen Starting from 160cm Height:**
-To optimize user visibility and accessibility, the design places the display screen at a height of 160cm from the ground. This strategic positioning takes into consideration ergonomic principles, ensuring that users can interact with the screen comfortably and efficiently.
+#### 10.6 Display Screen Starting from 160cm Height:
+   - To optimize user visibility and accessibility, the design places the display screen at a height of 160cm from the ground. This strategic positioning takes into consideration ergonomic principles, ensuring that users can interact with the screen comfortably and efficiently.
 
-10.7 **RFID Reader Plates Dimensions (50cm X 26cm):**
-The RFID reader plates are meticulously designed with dimensions of 50cm X 26cm. This specific sizing is chosen to optimize the scanning capabilities and overall functionality of the RFID system. The dimensions are carefully calibrated to strike a balance between efficiency and form factor.
+#### 10.7 RFID Reader Plates Dimensions (50cm X 26cm):
+   - The RFID reader plates are meticulously designed with dimensions of 50cm X 26cm. This specific sizing is chosen to optimize the scanning capabilities and overall functionality of the RFID system. The dimensions are carefully calibrated to strike a balance between efficiency and form factor.
 
-10.8 **Required Kiosk Dimensions (50cm X 75cm):**
-Maintaining a streamlined approach to space efficiency, the kiosk is designed with dimensions of 50cm X 75cm. This ensures that the kiosk occupies an appropriate footprint while accommodating all necessary components seamlessly.
+#### 10.8 Required Kiosk Dimensions (50cm X 75cm):
+   - Maintaining a streamlined approach to space efficiency, the kiosk is designed with dimensions of 50cm X 75cm. This ensures that the kiosk occupies an appropriate footprint while accommodating all necessary components seamlessly.
 
-10.9 **Display Screen Opposite RFID Reader Plates:**
-The positioning of the display screen opposite the RFID reader plates is a deliberate design choice. This configuration enhances user interaction by providing a clear and unobstructed view of the information displayed. It contributes to an intuitive and user-friendly experience.
+#### 10.9 Display Screen Opposite RFID Reader Plates:
+   - The positioning of the display screen opposite the RFID reader plates is a deliberate design choice. This configuration enhances user interaction by providing a clear and unobstructed view of the information displayed. It contributes to an intuitive and user-friendly experience.
 
-10.10 **Light Strip Around the Screen:**
-Adding an element of aesthetic appeal, a light strip is integrated around the display screen. This design feature not only enhances the visual attractiveness of the kiosk but also serves a functional purpose by improving visibility. The light strip contributes to drawing attention to the kiosk in various environments.
+#### 10.10 Light Strip Around the Screen:
+   - Adding an element of aesthetic appeal, a light strip is integrated around the display screen. This design feature not only enhances the visual attractiveness of the kiosk but also serves a functional purpose by improving visibility. The light strip contributes to drawing attention to the kiosk in various environments.
 
-10.11 **RFID Reader Plate Height at 80cm:**
-The RFID reader plates are positioned at a height of 80cm from the ground. This strategic placement is chosen to optimize user accessibility and ease of use. The design ensures that users can interact with the RFID reader plates comfortably, aligning with ergonomic considerations.
+#### 10.11 RFID Reader Plate Height at 80cm:
+   - The RFID reader plates are positioned at a height of 80cm from the ground. This strategic placement is chosen to optimize user accessibility and ease of use. The design ensures that users can interact with the RFID reader plates comfortably, aligning with ergonomic considerations.
 
-10.12 **Rotation and Tilt Movement for Screen:**
-To offer users flexibility in viewing angles, the design incorporates rotation and tilt movement for the display screen. This feature allows users to adjust the screen to their preferred positions, enhancing the overall user experience. The focus on customizable viewing angles contributes to the versatility of the kiosk system.
+#### 10.12 Rotation and Tilt Movement for Screen:
+   - To offer users flexibility in viewing angles, the design incorporates rotation and tilt movement for the display screen. This feature allows users to adjust the screen to their preferred positions, enhancing the overall user experience. The focus on customizable viewing angles contributes to the versatility of the kiosk system.
 
 
