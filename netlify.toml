@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "public"
+
+[[redirects]]
+  from = "/api/countries"
+  to = "https://my-json-server.typicode.com/raoakif/portfolio-api/countries"
+  status = 200
+  force = true
